@@ -61,9 +61,11 @@ export default function HomePage() {
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-2xl font-semibold font-nunito ">Upcoming Events</h2>
-            <Button variant="ghost" className=" bg-white border text-green-400 border-green-400 hover:bg-green-200  ">
-            View all
+            <Link href="/events" >
+              <Button variant="ghost" className=" bg-white border text-green-400 border-green-400 hover:bg-green-200  ">
+                View all
               </Button>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {events.map((event, i) => (

@@ -24,7 +24,6 @@ export default function Component() {
 
   const openCreateEventModal = () => {
       setOpen(true)
-      
   }
 
   return (
@@ -40,7 +39,10 @@ export default function Component() {
         {/* Header */}
         <div className="flex items-center justify-between ">
           <div className="space-y-1">
+            <Link href={"/"} >
+            
                 <Image src={logo} alt="Hero Image" className="object-contain " />
+            </Link>
 
             
           </div>
